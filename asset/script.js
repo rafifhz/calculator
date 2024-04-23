@@ -100,10 +100,7 @@ document.querySelector('#checkbox').addEventListener('change', () => {
 } else {
     container.classList.remove("class2");
     container.classList.add("class1");
-    let temp = document.getElementsByClassName("silver2");
-    console.log(temp[0]);
-    console.log(temp[1]);
-    console.log(temp[2]);
+  
 
     //btn.innerHTML =document.getElementById("fas fa-sun");
 }
