@@ -4,10 +4,31 @@
     box-sizing: border-box;
    
 }
-#Caluculator_container{
+#moon{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    cursor: pointer;
+}
+.class1{
+    position: relative;
     display: flex;
     flex-direction: column;
-    padding:20px;
+    padding:20px 20px 20px 20px;
+    align-items: center;
+    justify-content: center;
+    background-color:#000;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 5% auto;
+    box-shadow: 0px 0px 21px 0px rgba(31, 30, 30, 0.678) inset;
+
+}
+.class2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding:20px 20px 20px 20px;
     align-items: center;
     justify-content: center;
     background-color:#ccc;
@@ -30,6 +51,8 @@
     background-color: #d5d8d1;
     color: #000;
 }
+
+
 .rows button{
   font-size: 24px;
       width: 60px;
@@ -60,3 +83,82 @@ background: #eef0f4;
 
 
 }
+.active{
+    background-color: #000;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+  
+body {
+    height: 100vh;
+    background: #ffffff;
+    display: grid;
+    place-content: center;
+    transition: 0.3s ease-in-out;
+  }
+  
+ 
+  
+  #checkbox {
+    position: relative;
+    appearance: none;
+    outline: none;
+    bottom: 5px;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: #a3a0a0c7;
+    box-shadow: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #checkbox:checked {
+    background: #8000c9;
+  }
+  
+  #checkbox::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: inherit;
+    width: 36px;
+    height: 36px;
+    background: #ffff00;
+    transition: inherit;
+  }
+  
+  #checkbox::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: calc(100% + 36px);
+    border-radius: inherit;
+    width: 36px;
+    height: 36px;
+    background: #c3c3c3;
+    transition: inherit;
+  }
+  
+   #checkbox:checked::before {
+    left: calc(100% - 38px);
+    background: #ffff00;
+  }
+  
+   #checkbox:checked::after {
+    right: 12px;
+    background: #8000c9;
+  }
